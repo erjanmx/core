@@ -281,7 +281,7 @@ class ONVIFDevice:
             system_date,
         )
 
-        dt_diff = cam_date - system_date
+        dt_diff = cam_date_utc - system_date
         self._dt_diff_seconds = dt_diff.total_seconds()
 
         # It could be off either direction, so we need to check the absolute value
